@@ -2,9 +2,9 @@
 const Body = () => {
     
     return (
-        <div>
+        <body>
             Body
-        </div>
+        </body>
     );
 }
 

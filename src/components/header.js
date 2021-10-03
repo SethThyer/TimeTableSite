@@ -2,9 +2,9 @@
 const Header = () => {
     
     return (
-        <div className="heading">
+        <header className="heading">
             Header
-        </div>
+        </header>
     );
 }
 
