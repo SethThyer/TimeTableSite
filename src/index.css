@@ -1,5 +1,6 @@
 :root {
   --bg-color: #2a2a2a;
+  --gray-color: #242222;
   --black-color: #181818;
   --red-color: #8d3333;
   --purple-color: #784491;
@@ -47,10 +48,10 @@
 .footer {
   position: absolute;
   bottom: -4.5rem;
-
-  background-color: var(--black-color);
-  height: 9rem;
+  background-color: var(--gray-color);
+  height: 14rem;
   width: 100%;
+  border-top:var(--purple-color) solid 5px;
 }
 
 .contact-links {
@@ -66,5 +67,21 @@
 }
 .contact-links ul li {
   display:table-cell;
-  background-color: var(--black-color);
+  background-color: var(--gray-color);
+}
+.contact-links ul li a {
+  background-color: var(--gray-color);
+  height: 100px;
+  width: 100px;
+}
+
+
+.link {
+  background-color: var(--gray-color);
+  height: 75px;
+  transition: ease-in-out 100ms;
+}
+.link:hover {
+  filter:opacity(50%);
+  filter:hue-rotate(45%);
 }
