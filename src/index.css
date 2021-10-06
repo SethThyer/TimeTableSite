@@ -23,7 +23,8 @@
   transition: 50ms;
 }
 
-/* Text */
+
+
 .heading {
   text-align: center;
   font-size: var(--large-size);
@@ -37,14 +38,6 @@
   margin-top:20px;
 }
 
-
-/* Misc */
-
-.fill {
-  height: 100vh;
-  min-height: 40rem;
-}
-
 .footer {
   position: absolute;
   bottom: -4.5rem;
@@ -53,6 +46,13 @@
   width: 100%;
   border-top:var(--purple-color) solid 5px;
 }
+
+.fill {
+  height: 100vh;
+  min-height: 40rem;
+}
+
+
 
 .contact-links {
   position:absolute;
@@ -84,4 +84,19 @@
 .link:hover {
   filter:opacity(50%);
   filter:hue-rotate(45%);
+}
+
+.grid {
+  margin-top: 250px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+}
+.grid-item {
+  color: var(--black-color);
+  background-color: var(--white-color);
+  border: 5px solid var(--red-color);
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
 }
