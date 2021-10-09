@@ -16,13 +16,13 @@ const MonthDays = {
 };
 
 const Days = {
+    0: "Sunday",
     1: "Monday",
     2: "Tuesday",
     3: "Wednesday",
     4: "Thursday",
     5: "Friday",
-    6: "Saturday",
-    0: "Sunday"
+    6: "Saturday"
 };
 
 if (year % 4) MonthDays[2] = 29;
@@ -43,8 +43,8 @@ let currentDay = Days[new Date().getDay()];
 let nextDay = Days[new Date().getDay() + 1];
 
 let weeSchoolNext = weekSchool;
-if (nextDay == 'Monday') {
-    if (weekSchool = 1) weeSchoolNext = 2;
+if (nextDay === 'Monday') {
+    if (weekSchool === 1) weeSchoolNext = 2;
     else weeSchoolNext = 1;
 }
 
