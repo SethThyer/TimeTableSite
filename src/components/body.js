@@ -11,16 +11,17 @@ class Body extends React.Component {
     }
 
     componentDidMount() {
-        const uri = `http://localhost:5000/find/${dayInfo.schoolWeek}/${dayInfo.dayWeek}`;
+        const uri = `http://localhost:5000/find/${dayInfo.schoolWeek}/Monday`;
+        //
         
         fetch(uri)
-        .then(res => res.json())
-        .then(json => {
+        .then((res) => res.json())
+        .then((json) => {
             this.setState({ data: json });
         })
         .catch(error => {
-            console.log(error)
-            error = "ERROR: " + JSON.stringify(error);
+            error = "ERROR: " + error;
+            console.log(error);
         });
     }
 
@@ -32,15 +33,76 @@ class Body extends React.Component {
             <p className="heading">fetching data...</p>
         );
 
+        //{this.state.data.classes.p0.startTime}
         return (
             <div>
                 <div className="grid">
-                    <div className="grid-item">Period 1</div>
-                    <div className="grid-item">Period 2</div>
-                    <div className="grid-item">Period 3</div>
-                    <div className="grid-item">Period 4</div>
-                    <div className="grid-item">Period 5</div>
-                    <div className="grid-item">Period 6</div>
+                    <div className="grid-item">Period 1
+                        <div className="timeon"> 
+                        20:00
+                        </div>
+                        <p className="text"> 
+                            {this.state.data.classes.p0.class}
+                        </p>
+                        <div className="time"> 
+                        23:00
+                        </div>
+                    </div>
+                    <div className="grid-item">Period 2
+                        <div className="time"> 
+                        20:00
+                        </div>
+                        <p className="text"> 
+                            {this.state.data.classes.p1.class}
+                        </p>
+                        <div className="time"> 
+                        20:00
+                        </div>
+                    </div>
+                    <div className="grid-item">Period 3
+                        <div className="time"> 
+                        20:00
+                        </div>
+                        <p className="text"> 
+                            {this.state.data.classes.p2.class}
+                        </p>
+                        <div className="time"> 
+                        20:00
+                        </div>
+                    </div>
+                    <div className="grid-item">Period 4
+                        <div className="time"> 
+                        20:00
+                        </div>
+                        <p className="text"> 
+                            {this.state.data.classes.p3.class}
+                        </p>
+                        <div className="time"> 
+                        20:00
+                        </div>
+                    </div>
+                    <div className="grid-item">Period 5
+                        <div className="time"> 
+                        20:00
+                        </div>
+                        <p className="text"> 
+                            {this.state.data.classes.p4.class}
+                        </p>
+                        <div className="time"> 
+                        20:00
+                        </div>
+                    </div>
+                    <div className="grid-item">Period 6
+                        <div className="time"> 
+                        20:00
+                        </div>
+                        <p className="text"> 
+                            {this.state.data.classes.p5.class}
+                        </p>
+                        <div className="time"> 
+                        20:00
+                        </div>
+                    </div>
                 </div>
             </div>
         );
