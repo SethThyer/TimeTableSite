@@ -38,17 +38,21 @@
   margin-top:20px;
 }
 
+.footerfill {
+  padding-bottom: 50vh;
+}
+
 .text {
   background-color: var(--white-color);
   text-align: center;
 }
 
 .footer {
-  padding-top: 50px;
+  padding-top: 30px;
   position: fixed;
   bottom: 0;
   background-color: var(--gray-color);
-  height: 10rem;
+  height: 5rem;
   width: 100%;
   border-top:var(--purple-color) solid 5px;
 }
@@ -76,7 +80,6 @@
 
 
 .contact-links {
-  width: 100%;
   text-align: center;
 }
 .contact-links ul {
@@ -90,14 +93,13 @@
 }
 .contact-links ul li a {
   background-color: var(--gray-color);
-  height: 100px;
-  width: 100px;
 }
 
 
 .link {
   background-color: var(--gray-color);
-  height: 75px;
+  height: 5vw;
+  max-height: 4rem;
   transition: ease-in-out 100ms;
 }
 .link:hover {
@@ -106,10 +108,8 @@
 }
 
 .grid {
-  margin-top: 250px;
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 20px;
 }
 .grid-item {
   text-align: center;

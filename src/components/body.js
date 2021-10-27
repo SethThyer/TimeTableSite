@@ -29,7 +29,11 @@ class Body extends React.Component {
 
     render() {
         if (this.state.data == null) return (
-            <p className="heading">fetching data...</p>
+            <div>
+                <p className="heading">fetching data...</p>
+                <div className="footerfill" />  
+            </div>
+            
         );
 
         //{this.state.data.classes.p0.startTime}
@@ -103,6 +107,7 @@ class Body extends React.Component {
                         </div>
                     </div>
                 </div>
+                <div className="footerfill" /> 
             </div>
         );
     }
