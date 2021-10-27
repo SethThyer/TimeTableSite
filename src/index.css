@@ -108,8 +108,10 @@
 }
 
 .grid {
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: auto auto auto;
+  padding: 20px;
 }
 .grid-item {
   text-align: center;
