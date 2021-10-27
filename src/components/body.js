@@ -11,8 +11,7 @@ class Body extends React.Component {
     }
 
     componentDidMount() {
-        const uri = `http://localhost:5000/find/${dayInfo.schoolWeek}/Monday`;
-        //
+        const uri = `http://localhost:5000/find/${dayInfo.schoolWeek}/${dayInfo.dayWeek}`;
         
         fetch(uri)
         .then((res) => res.json())

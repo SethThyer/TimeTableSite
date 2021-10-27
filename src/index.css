@@ -40,13 +40,15 @@
 
 .text {
   background-color: var(--white-color);
+  text-align: center;
 }
 
 .footer {
-  position: absolute;
-  bottom: -4.5rem;
+  padding-top: 50px;
+  position: fixed;
+  bottom: 0;
   background-color: var(--gray-color);
-  height: 14rem;
+  height: 10rem;
   width: 100%;
   border-top:var(--purple-color) solid 5px;
 }
@@ -57,23 +59,25 @@
 }
 
 .time {
+  text-align: center;
   border-radius: 25%;
-  margin: 0px 5rem 0px 5rem;
   color:var(--red-color);
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .timeon {
+  text-align: center;
   border-radius: 25%;
-  margin: 0px 5rem 0px 5rem;
   color:var(--purple-color);
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 
 
 .contact-links {
-  position:absolute;
   width: 100%;
   text-align: center;
-  bottom: 4rem;
 }
 .contact-links ul {
   width:100%;
@@ -108,10 +112,10 @@
   padding: 20px;
 }
 .grid-item {
+  text-align: center;
   color: var(--black-color);
   background-color: var(--white-color);
   border: 5px solid var(--red-color);
   padding: 50px;
   font-size: 30px;
-  text-align: center;
 }
